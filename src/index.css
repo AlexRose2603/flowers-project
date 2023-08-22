@@ -3,6 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: #000000;
+  color: #ffffff;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    min-width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    min-width: 1440px;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+}
 
 h1,
 h2,
