@@ -1,3 +1,40 @@
-export const DeliveryPayment = () => {
-  return <div>Delivery and payment page</div>;
+import { NavLink } from "react-router-dom";
+import Footer from "../../components/Footer/Footer";
+
+const DeliveryPayment = () => {
+  return (
+    <>
+      <NavLink to="/">главная/</NavLink>
+      <h2>доставка и оплата</h2>
+      <h3>Дорогие клиенты!</h3>
+      <p>
+        Во время пандемии (COVID-19) компания Lover Flower призывает всех меньше
+        контактировать с другими людьми для защиты себя и своих близких. Именно
+        поэтому мы организовали БЕСКОНТАКТНУЮ ДОСТАВКУ
+      </p>
+      <h3>Способы оплаты:</h3>
+      <ul>
+        <li>
+          <p>
+            БАНКОВСКОЙ КАРТОЙ ПРИ ОФОРМЛЕНИИ ЗАКАЗА ЧЕРЕЗ САЙТ ИЛИ ПО ССЫЛКЕ
+          </p>
+        </li>
+        <li>
+          <p>
+            НАЛИЧНЫМИ, БАНКОВСКОЙ КАРТОЙ ПРИ САМОВЫВОЗЕ ИЛИ С РАСЧЕТНОГО СЧЕТА
+            ОРГАНИЗАЦИИ
+          </p>
+        </li>
+        <li>
+          <p>НАЛИЧНЫМИ ПРИ ДОСТАВКЕ КУРЬЕРОМ</p>
+        </li>
+        <li>
+          <p>КРИПТОВАЛЮТОЙ</p>
+        </li>
+      </ul>
+      <Footer />
+    </>
+  );
 };
+
+export default DeliveryPayment;
