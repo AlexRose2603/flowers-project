@@ -1,13 +1,11 @@
-import { Header } from "../../components/SharedLayout/Header/Header";
-import { Catalog } from "../Catalog/Catalog";
-import { Contacts } from "../Contacts/Contacts";
+import Footer from "../../components/Footer/Footer";
 
-export const MainPage = () => {
+const MainPage = () => {
   return (
     <>
-      <Header />
-      <Catalog />
-      <Contacts />
+      <div>Main page</div>
+      <Footer />
     </>
   );
 };
+export default MainPage;
