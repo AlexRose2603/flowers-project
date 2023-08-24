@@ -4,8 +4,8 @@ export const Logotype = styled.div`
   font-family: "Cormorant", serif;
   font-weight: 300;
   text-transform: uppercase;
-  position: relative;
   text-align: center;
+  position: relative;
 `;
 
 export const LetterL = styled.div`
@@ -17,7 +17,8 @@ export const LetterL = styled.div`
 export const LetterF = styled.div`
   font-size: 50px;
   letter-spacing: 1px;
-  position: absolute;
+  color: white;
+  left: 180px;
   top: 13px;
-  left: 166px;
+  position: absolute;
 `;

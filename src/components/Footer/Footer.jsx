@@ -51,8 +51,8 @@ const Footer = () => {
               iconName={"icon-soc1"}
               width={"24px"}
               height={"24px"}
-              stroke={"#ffffff"}
-              fill={"#ffffff"}
+              stroke={""}
+              fill={"#000000"}
             />
           </SocLink>
           <SocLink>
@@ -60,8 +60,8 @@ const Footer = () => {
               iconName={"icon-whatsapp"}
               width={"24px"}
               height={"24px"}
-              stroke={"#ffffff"}
-              fill={"#ffffff"}
+              stroke={""}
+              fill={"#000000"}
             />
           </SocLink>
           <SocLink>
@@ -69,8 +69,8 @@ const Footer = () => {
               iconName={"icon-call"}
               width={"24px"}
               height={"24px"}
-              stroke={"#ffffff"}
-              fill={"#ffffff"}
+              stroke={""}
+              fill={"#000000"}
             />
           </SocLink>
         </Socials>

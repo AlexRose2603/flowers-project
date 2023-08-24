@@ -1,19 +1,30 @@
+import { useState } from "react";
 import { Icon } from "../../../utiles/Icon/Icon";
 import { Title, Wrapper } from "./Header.styled";
+import { Burger } from "../Burger/Burger";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
       <Wrapper>
-        <div>
-          <Icon
-            iconName={"icon-mob-menu"}
-            width={"20px"}
-            height={"10px"}
-            stroke={"#43FFD2"}
-            fill={"#43FFD2"}
-          />
-        </div>
+        {isOpen ? (
+          <Burger isOpen={isOpen} toggleMenu={toggleMenu} />
+        ) : (
+          <div onClick={toggleMenu}>
+            <Icon
+              iconName={"icon-mob-menu"}
+              width={"24px"}
+              height={"24px"}
+              stroke={"#43FFD2"}
+              fill={"#43FFD2"}
+            />
+          </div>
+        )}
         <Title>
           LOVER <br />
           FLOWER

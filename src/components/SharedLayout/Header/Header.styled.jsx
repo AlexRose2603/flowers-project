@@ -4,8 +4,8 @@ import { Icon } from "../../../utiles/Icon/Icon";
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  padding: 16px 0;
+  align-items: center;
+  padding: 16px 10px;
 `;
 
 export const Burger = styled(Icon)``;

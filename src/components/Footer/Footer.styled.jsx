@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   margin-top: 12px;
+  margin-bottom: 20px;
 `;
 
 export const NavList = styled.ul`
@@ -32,6 +33,7 @@ export const Contacts = styled.ul`
 
 export const ContactItem = styled.li`
   text-transform: uppercase;
+  text-align: center;
 `;
 
 export const ContactInfo = styled.p`
