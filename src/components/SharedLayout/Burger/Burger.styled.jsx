@@ -6,7 +6,7 @@ export const BurgerWrapper = styled.div`
   height: 100vh;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 20;
   overflow: hidden;
   background-color: #23323f;
   padding: 0 10px;
