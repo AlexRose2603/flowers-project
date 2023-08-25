@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import {
   AddSection,
@@ -6,6 +5,9 @@ import {
   Ball,
   Container,
   DeliveryItem,
+  Ellipse,
+  EllipseCard,
+  EllipseCards2,
   InfoBox,
   InfoText,
   InlargedText,
@@ -14,6 +16,8 @@ import {
   OptionItem,
   OptionList,
   PaymentType,
+  // Pion,
+  // Pion2,
   Section,
   SectionList,
   SectionWrapper,
@@ -22,13 +26,26 @@ import {
   Title,
   TypeList,
 } from "./Delivery.styled";
+import ellipse1 from "../../assets/images/Delivery/Ellipse-hero.png";
+// import Pion1 from "../../assets/images/Delivery/pion-hero.png";
+import ellipseCards from "../../assets/images/Delivery/Ellipse-cards.png";
+import ellipseCards2 from "../../assets/images/Delivery/Ellipse-cards2.png";
+// import pion2 from "../../assets/images/Delivery/pion2.png";
 
+import { LinkToMain } from "../AboutUs/AboutUs.styled";
 const DeliveryPayment = () => {
   return (
     <>
       <Container>
-        <NavLink to="/">главная/</NavLink>
-        <Title>доставка и оплата</Title>
+        <Ellipse src={ellipse1} alt="" />
+
+        <LinkToMain to="/">главная/</LinkToMain>
+        {/* <Pion src={Pion1} alt="" /> */}
+        <Title>
+          доставка
+          <span>и оплата</span>
+        </Title>
+
         <InfoBox>
           <SubTitle>Дорогие клиенты!</SubTitle>
           <InfoText>
@@ -40,6 +57,8 @@ const DeliveryPayment = () => {
         </InfoBox>
         <ListName>Способы оплаты:</ListName>
         <TypeList>
+          <EllipseCard src={ellipseCards} alt="" />
+
           <PaymentType>
             <Ball></Ball>
             БАНКОВСКОЙ КАРТОЙ ПРИ ОФОРМЛЕНИИ ЗАКАЗА ЧЕРЕЗ САЙТ ИЛИ ПО ССЫЛКЕ
@@ -53,6 +72,9 @@ const DeliveryPayment = () => {
             <Ball></Ball>
             НАЛИЧНЫМИ ПРИ ДОСТАВКЕ КУРЬЕРОМ
           </PaymentType>
+
+          <EllipseCards2 src={ellipseCards2} alt="" />
+
           <PaymentType>
             <Ball></Ball>
             КРИПТОВАЛЮТОЙ
@@ -122,7 +144,7 @@ const DeliveryPayment = () => {
           <Additional>
             Если вы либо иной получатель не получили заказ, вам необходимо
             сообщить об этом менеджеру по телефону{" "}
-            <span>+380 50 305 26 11</span>.
+            <span>+380 50-305 26 11</span>.
           </Additional>
           <SectionWrapper>
             <h3>Возврат денег:</h3>
@@ -143,6 +165,7 @@ const DeliveryPayment = () => {
             </Additional>
           </SectionWrapper>
         </AddSection>
+        {/* <Pion2 src={pion2} alt="" /> */}
       </Container>
       <Footer />
     </>
