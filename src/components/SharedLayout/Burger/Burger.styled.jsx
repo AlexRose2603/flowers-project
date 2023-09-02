@@ -2,14 +2,15 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const BurgerWrapper = styled.div`
-  min-width: 80%;
+  width: 80vw;
   height: 100vh;
   position: fixed;
   top: 0;
   z-index: 20;
   overflow: hidden;
-  background-color: #23323f;
+  background-color: #1e2830;
   padding: 0 10px;
+  margin-left: -10px;
 `;
 
 export const BurgerBar = styled.div`
@@ -78,12 +79,16 @@ export const Timing = styled.p`
   font-size: 10px;
   font-weight: 300;
   letter-spacing: 1px;
+  width: 181px;
+  line-height: 17px;
 `;
 
 export const SomeInfo = styled.div`
   margin-bottom: 10px;
   color: #555555;
   font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
 `;
 
 export const Phone = styled.a`
