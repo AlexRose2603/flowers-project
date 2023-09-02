@@ -3,13 +3,17 @@ import Footer from "../../components/Footer/Footer";
 import mainHero from "../../assets/images/MainPage/hero-mob.png";
 import heroMint from "../../assets/images/MainPage/hero-mint.png";
 import heroPink from "../../assets/images/MainPage/hero-pink.png";
+
 import {
+  AddToCartBtn,
+  AllCatalogLink,
   Card,
   CardList,
   CardTitle,
   CardsContainer,
   CatalogBtn,
   Container,
+  Figure,
   Hero,
   HeroImgBox,
   HeroMint,
@@ -17,6 +21,9 @@ import {
   HeroPink,
   Item,
   SectionTitle,
+  StepNumber,
+  StepText,
+  WatchCatalog,
 } from "./MainPage.styled";
 
 const MainPage = () => {
@@ -25,6 +32,7 @@ const MainPage = () => {
       <HeroImgBox>
         <HeroMint src={heroMint} alt="" />
         <HeroPink src={heroPink} alt="" />
+
         <Hero src={mainHero} alt="" />
       </HeroImgBox>
       <Container>
@@ -44,28 +52,28 @@ const MainPage = () => {
               <Item>розы</Item>
               <Item>свадебные</Item>
             </CardList>
-            <NavLink>смотреть каталог</NavLink>
+            <WatchCatalog>смотреть каталог</WatchCatalog>
           </Card>
 
           <Card>
             <CardTitle>готовые букеты из сухоцветов</CardTitle>
             <CardList>
-              <li>букеты</li>
-              <li>для интерьера</li>
-              <li>Композиции</li>
+              <Item>букеты</Item>
+              <Item>для интерьера</Item>
+              <Item>Композиции</Item>
             </CardList>
-            <NavLink>смотреть каталог</NavLink>
+            <WatchCatalog>смотреть каталог</WatchCatalog>
           </Card>
 
           <Card>
             <CardTitle>дополнительно</CardTitle>
             <CardList>
-              <li>шары</li>
-              <li>игрушки</li>
-              <li>открытки</li>
-              <li>упаковка</li>
+              <Item>шары</Item>
+              <Item>игрушки</Item>
+              <Item>открытки</Item>
+              <Item>упаковка</Item>
             </CardList>
-            <NavLink>смотреть каталог</NavLink>
+            <WatchCatalog>смотреть каталог</WatchCatalog>
           </Card>
         </CardsContainer>
 
@@ -76,48 +84,48 @@ const MainPage = () => {
             <img src="" alt="" />
             <h3>лучший день</h3>
             <p>250 грн</p>
-            <button>в корзину</button>
+            <AddToCartBtn type="button">в корзину</AddToCartBtn>
           </div>
           <div>
             <img src="" alt="" />
             <h3>лучший день</h3>
             <p>250 грн</p>
-            <button>в корзину</button>
+            <AddToCartBtn>в корзину</AddToCartBtn>
           </div>
           <div>
             <img src="" alt="" />
             <h3>лучший день</h3>
             <p>250 грн</p>
-            <button>в корзину</button>
+            <AddToCartBtn>в корзину</AddToCartBtn>
           </div>
-          <NavLink>смотреть весь каталог</NavLink>
+          <AllCatalogLink>смотреть весь каталог</AllCatalogLink>
         </div>
         <div>
           <SectionTitle>Как сделать заказ</SectionTitle>
-          <div></div>
-          <p>1 шаг</p>
-          <p>Выберите какие цветы или подарки вы хотите купить</p>
-          <p>2 шаг</p>
-          <p>
+          <Figure></Figure>
+          <StepNumber>1 шаг</StepNumber>
+          <StepText>Выберите какие цветы или подарки вы хотите купить</StepText>
+          <StepNumber>2 шаг</StepNumber>
+          <StepText>
             Оформите заказ, и мы отправим вам подтверждение на электронную
             почту, а так же менеджер свяжется с вами по телефону или в WhatsApp
-          </p>
-          <p>3 шаг</p>
-          <p>
+          </StepText>
+          <StepNumber>3 шаг</StepNumber>
+          <StepText>
             Наши флористы бережно подойдут к созданию букета цветов в самом
             начале дня или накануне
-          </p>
-          <p>4 шаг</p>
-          <p>
+          </StepText>
+          <StepNumber>4 шаг</StepNumber>
+          <StepText>
             Один из наших курьеров или партнёров доставит ваш заказ по
             указанному адресу. Мы отправим вам сообщение в Whats App как только
             заказ будет доставлен
-          </p>
-          <p>5 шаг</p>
-          <p>
-            Наслаждайтесь цветами , если вы заказали их для дома или любовью,
+          </StepText>
+          <StepNumber>5 шаг</StepNumber>
+          <StepText>
+            Наслаждайтесь цветами, если вы заказали их для дома или любовью,
             которой поделились, если вы заказали для друга
-          </p>
+          </StepText>
         </div>
       </Container>
       <Footer />

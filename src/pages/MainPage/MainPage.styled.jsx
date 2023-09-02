@@ -11,15 +11,20 @@ export const HeroImgBox = styled.div`
 
 export const HeroMint = styled.img`
   position: absolute;
-  left: -70px;
-  top: 0;
+  left: -40%;
+  top: 10%;
 `;
 
 export const HeroPink = styled.img`
   position: absolute;
+  right: -40%;
+  top: 5%;
+  transform: rotate(-53.21deg);
 `;
 
-export const Hero = styled.img``;
+export const Hero = styled.img`
+  position: relative;
+`;
 
 export const HeroParagr = styled.p`
   letter-spacing: 0.28px;
@@ -35,9 +40,12 @@ export const CatalogBtn = styled(NavLink)`
   font-size: 12px;
   font-weight: 700;
   padding: 16px 50px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
+  max-width: 220px;
   margin-bottom: 100px;
 `;
 
@@ -78,8 +86,55 @@ export const CardList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 6px;
+  margin-bottom: 30px;
+  list-style: inside;
+  list-style-type: disc;
 `;
 
 export const Item = styled.li`
   letter-spacing: 0.56px;
+`;
+
+export const WatchCatalog = styled(NavLink)`
+  color: #d978ac;
+  text-decoration: underline;
+`;
+
+export const Figure = styled.div`
+  height: 10px;
+  width: 45px;
+  background-color: #d978ac;
+  margin-bottom: 20px;
+`;
+export const AddToCartBtn = styled.button`
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  padding: 16px 93px;
+  border: 0.25px white solid;
+  background-color: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+`;
+
+export const AllCatalogLink = styled(NavLink)`
+  margin-top: 40px;
+  margin-bottom: 95px;
+  display: inline-block;
+  color: #d978ac;
+  text-decoration: underline;
+`;
+
+export const StepNumber = styled.p`
+  color: #d978ac;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  margin-bottom: 10px;
+`;
+
+export const StepText = styled.p`
+  text-transform: none;
+  line-height: 17px;
+  margin-bottom: 20px;
 `;

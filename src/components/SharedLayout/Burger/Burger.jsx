@@ -105,8 +105,8 @@ export const Burger = ({ isOpen, toggleMenu }) => {
           </Item>
         </AddressList>
         <SomeInfo>
-          <p>политика конфиденциальности</p>
-          <p>обработка персональных данных</p>
+          <p>Политика конфиденциальности</p>
+          <p>Обработка персональных данных</p>
         </SomeInfo>
         <Phone href="tel:+380503052611">+380 (50) 305-26-11</Phone>
         <SocList>

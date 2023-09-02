@@ -25,6 +25,7 @@ const Header = () => {
             />
           </div>
         )}
+
         <Title>
           LOVER <br />
           FLOWER
