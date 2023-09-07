@@ -7,23 +7,45 @@ export const Container = styled.div`
 
 export const HeroImgBox = styled.div`
   margin-bottom: 54px;
+  position: relative;
 `;
 
 export const HeroMint = styled.img`
   position: absolute;
   left: -40%;
-  top: 10%;
+  top: -5%;
 `;
 
 export const HeroPink = styled.img`
   position: absolute;
   right: -40%;
-  top: 5%;
+  top: -5%;
   transform: rotate(-53.21deg);
 `;
 
-export const Hero = styled.img`
-  position: relative;
+export const Writing = styled.img`
+  position: absolute;
+  transform: rotate(-10.26deg);
+  top: 85%;
+  z-index: 4;
+  right: 0;
+  width: 137px;
+  height: 80px;
+`;
+
+export const Shadow = styled.img`
+  position: absolute;
+  min-width: 320px;
+  min-height: 105px;
+  top: 77%;
+`;
+
+export const Hero = styled.img``;
+
+export const Layer = styled.img`
+  position: absolute;
+  z-index: 5;
+  top: 0.5%;
 `;
 
 export const HeroParagr = styled.p`
@@ -54,6 +76,17 @@ export const CardsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  margin-bottom: 100px;
+`;
+
+export const Ellipse = styled.img`
+  position: absolute;
+  top: 100%;
+`;
+
+export const Ellipse2 = styled.img`
+  position: absolute;
+  top: 155%;
 `;
 
 export const SectionTitle = styled.h2`
@@ -62,6 +95,11 @@ export const SectionTitle = styled.h2`
   font-weight: 400;
   letter-spacing: 0.8px;
   margin-bottom: 20px;
+
+  span {
+    display: block;
+    margin-left: 60px;
+  }
 `;
 
 export const Card = styled.div`
@@ -69,7 +107,6 @@ export const Card = styled.div`
   background: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   backdrop-filter: blur(20px);
-  border: 1px solid yellow;
   width: 300px;
   text-align: center;
 `;

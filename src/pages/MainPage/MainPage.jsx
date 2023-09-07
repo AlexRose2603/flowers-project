@@ -3,7 +3,11 @@ import Footer from "../../components/Footer/Footer";
 import mainHero from "../../assets/images/MainPage/hero-mob.png";
 import heroMint from "../../assets/images/MainPage/hero-mint.png";
 import heroPink from "../../assets/images/MainPage/hero-pink.png";
-
+import text from "../../assets/images/MainPage/texting.png";
+import shadowHands from "../../assets/images/MainPage/hands-shadow.png";
+import layer from "../../assets/images/MainPage/2layer.png";
+import ellipse from "../../assets/images/MainPage/cards-ellipse.png";
+import ellipse2 from "../../assets/images/MainPage/cards-pink-ellipse.png";
 import {
   AddToCartBtn,
   AllCatalogLink,
@@ -13,6 +17,8 @@ import {
   CardsContainer,
   CatalogBtn,
   Container,
+  Ellipse,
+  Ellipse2,
   Figure,
   Hero,
   HeroImgBox,
@@ -20,10 +26,13 @@ import {
   HeroParagr,
   HeroPink,
   Item,
+  Layer,
   SectionTitle,
+  Shadow,
   StepNumber,
   StepText,
   WatchCatalog,
+  Writing,
 } from "./MainPage.styled";
 
 const MainPage = () => {
@@ -32,9 +41,13 @@ const MainPage = () => {
       <HeroImgBox>
         <HeroMint src={heroMint} alt="" />
         <HeroPink src={heroPink} alt="" />
-
+        <Writing src={text} alt="" />
         <Hero src={mainHero} alt="" />
+        <Layer src={layer} alt="" />
+        <Shadow src={shadowHands} alt="" />
       </HeroImgBox>
+      <Ellipse src={ellipse} alt="" />
+      <Ellipse2 src={ellipse2} alt="" />
       <Container>
         <HeroParagr>
           Создаём для тех, кто ценит свежесть и изящество цветка
@@ -78,7 +91,9 @@ const MainPage = () => {
         </CardsContainer>
 
         <div>
-          <SectionTitle>Популярные букеты</SectionTitle>
+          <SectionTitle>
+            Популярные <span>букеты</span>
+          </SectionTitle>
           <p>Самые любимые композиции наших клиентов</p>
           <div>
             <img src="" alt="" />
