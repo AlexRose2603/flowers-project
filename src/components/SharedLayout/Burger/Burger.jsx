@@ -22,7 +22,7 @@ import {
 } from "./Burger.styled";
 import { SocLink } from "../../Footer/Footer.styled";
 
-export const Burger = ({ isOpen, toggleMenu }) => {
+export const Burger = ({ toggleMenu }) => {
   return (
     <>
       <BurgerWrapper>
