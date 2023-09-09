@@ -4,9 +4,9 @@ import { Icon } from "../../../utiles/Icon/Icon";
 const checkingTest = (props) => {
   console.log(props.test1);
   if (props.test1) {
-    return "tomato";
+    return "teal";
   }
-  return "white";
+  return "black";
 };
 
 export const Wrapper = styled.div`
