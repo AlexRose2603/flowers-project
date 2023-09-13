@@ -137,6 +137,9 @@ export const SectionList = styled.ul`
   list-style: inside;
   list-style-position: outside;
   margin-bottom: 60px;
+  &::marker {
+    font-size: 10px;
+  }
 `;
 export const Item = styled.li`
   font-weight: 300;
@@ -195,6 +198,9 @@ export const OptionList = styled.ul`
   margin-left: 19px;
   list-style: inside;
   list-style-position: outside;
+  &::marker {
+    font-size: 10px;
+  }
 `;
 
 export const OptionItem = styled.li`
