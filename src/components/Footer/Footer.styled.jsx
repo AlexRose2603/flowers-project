@@ -4,8 +4,10 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   margin-top: 12px;
   margin-bottom: 20px;
+  background-color: black;
+  position: relative;
+  z-index: 4;
 `;
-
 export const NavList = styled.ul`
   display: flex;
   flex-direction: column;
