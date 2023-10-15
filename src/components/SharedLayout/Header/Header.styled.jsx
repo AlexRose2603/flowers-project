@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Icon } from "../../../utiles/Icon/Icon";
 
 const checkingTest = (props) => {
-  console.log(props.test1);
+  // console.log(props.test1);
   if (props.test1) {
     return "teal";
   }
