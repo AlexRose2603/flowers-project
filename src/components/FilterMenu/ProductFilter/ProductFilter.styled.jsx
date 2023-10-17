@@ -75,3 +75,32 @@ export const ContainerCheckbox = styled.div`
     margin-right: 6px;
   }
 `;
+export const ListContainer = styled.div`
+  position: relative;
+`;
+
+export const FilterButton = styled.button`
+  background-color: #ff5733;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+`;
+
+export const List = styled.div`
+  width: 300px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 999999;
+  position: ${({ isOpen }) => (isOpen ? "sticky" : "absolute")};
+  top: 100%; /* Размещение списка под кнопкой */
+  left: 0;
+
+  max-height: 100%;
+  opacity: ${({ isOpen }) => (isOpen ? 1 : 0)}; /* Прозрачность */
+  transform: translateY(
+    ${({ isOpen }) => (isOpen ? "0" : "-10px")}
+  ); /* Сдвиг при открытии */
+  transition: opacity 0.3s, transform 0.3s; /* Плавная анимация */
+`;

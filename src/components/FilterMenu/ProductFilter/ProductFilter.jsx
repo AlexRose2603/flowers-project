@@ -8,6 +8,9 @@ import {
   FilterInput,
   ContainerCheckbox,
   SliderConteiner,
+  ListContainer,
+  List,
+  FilterButton,
 } from "./ProductFilter.styled";
 import PriceSlider from "../PriceSlider/PriceSlider";
 
@@ -72,102 +75,99 @@ const ProductFilter = () => {
   console.log("inputValue", inputValue);
 
   return (
-    <div>
-      <p>FilterMenu</p>
+    <ListContainer>
+      <FilterButton onClick={togleMenu}>фильтр товаров</FilterButton>
 
-      <button onClick={togleMenu}>фильтр товаров</button>
-      {isOpen && (
-        <div>
-          <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-            {({ values, setFieldValue }) => (
-              <Form>
-                <ByFilterName id="checkbox-group">По свету</ByFilterName>
-                <div role="group" aria-labelledby="checkbox-group">
-                  {byLights.map((item, index) => {
-                    return (
-                      <ContainerCheckbox key={index}>
-                        <FilterInput
-                          id={item}
-                          type="checkbox"
-                          name="checked"
-                          value={item}
-                          onChange={(e) => {
-                            handleChange(e, setFieldValue, values);
-                          }}
-                        />
-                        <FilterItem htmlFor={item}>{item}</FilterItem>
-                      </ContainerCheckbox>
-                    );
-                  })}
-                </div>
-                <ByFilterName id="checkbox-group">По цвету</ByFilterName>
-                <div role="group" aria-labelledby="checkbox-group">
-                  {byColor.map((item, index) => {
-                    return (
-                      <ContainerCheckbox key={index}>
-                        <FilterInput
-                          id={item}
-                          type="checkbox"
-                          name="checked"
-                          value={item}
-                          onChange={(e) => {
-                            handleChange(e, setFieldValue, values);
-                          }}
-                        />
-                        <FilterItem htmlFor={item}>{item}</FilterItem>
-                      </ContainerCheckbox>
-                    );
-                  })}
-                </div>
-                <ByFilterName id="checkbox-group">по формату</ByFilterName>
-                <div role="group" aria-labelledby="checkbox-group">
-                  {byFormat.map((item, index) => {
-                    return (
-                      <ContainerCheckbox key={index}>
-                        <FilterInput
-                          id={item}
-                          type="checkbox"
-                          name="checked"
-                          value={item}
-                          onChange={(e) => {
-                            handleChange(e, setFieldValue, values);
-                          }}
-                        />
-                        <FilterItem htmlFor={item}>{item}</FilterItem>
-                      </ContainerCheckbox>
-                    );
-                  })}
-                </div>
+      <List isOpen={isOpen}>
+        <Formik initialValues={initialValues} onSubmit={handleSubmit}>
+          {({ values, setFieldValue }) => (
+            <Form>
+              <ByFilterName id="checkbox-group">По свету</ByFilterName>
+              <div role="group" aria-labelledby="checkbox-group">
+                {byLights.map((item, index) => {
+                  return (
+                    <ContainerCheckbox key={index}>
+                      <FilterInput
+                        id={item}
+                        type="checkbox"
+                        name="checked"
+                        value={item}
+                        onChange={(e) => {
+                          handleChange(e, setFieldValue, values);
+                        }}
+                      />
+                      <FilterItem htmlFor={item}>{item}</FilterItem>
+                    </ContainerCheckbox>
+                  );
+                })}
+              </div>
+              <ByFilterName id="checkbox-group">По цвету</ByFilterName>
+              <div role="group" aria-labelledby="checkbox-group">
+                {byColor.map((item, index) => {
+                  return (
+                    <ContainerCheckbox key={index}>
+                      <FilterInput
+                        id={item}
+                        type="checkbox"
+                        name="checked"
+                        value={item}
+                        onChange={(e) => {
+                          handleChange(e, setFieldValue, values);
+                        }}
+                      />
+                      <FilterItem htmlFor={item}>{item}</FilterItem>
+                    </ContainerCheckbox>
+                  );
+                })}
+              </div>
+              <ByFilterName id="checkbox-group">по формату</ByFilterName>
+              <div role="group" aria-labelledby="checkbox-group">
+                {byFormat.map((item, index) => {
+                  return (
+                    <ContainerCheckbox key={index}>
+                      <FilterInput
+                        id={item}
+                        type="checkbox"
+                        name="checked"
+                        value={item}
+                        onChange={(e) => {
+                          handleChange(e, setFieldValue, values);
+                        }}
+                      />
+                      <FilterItem htmlFor={item}>{item}</FilterItem>
+                    </ContainerCheckbox>
+                  );
+                })}
+              </div>
 
-                <SliderConteiner>
-                  <ByFilterName>стоимость</ByFilterName>
-                  <PriceSlider />
-                </SliderConteiner>
-                <ByFilterName id="checkbox-group">по цветку</ByFilterName>
-                <div role="group" aria-labelledby="checkbox-group">
-                  {byFlower.map((item, index) => {
-                    return (
-                      <ContainerCheckbox key={index}>
-                        <FilterInput
-                          id={item}
-                          type="checkbox"
-                          name="checked"
-                          value={item}
-                          onChange={(e) => {
-                            handleChange(e, setFieldValue, values);
-                          }}
-                        />
-                        <FilterItem htmlFor={item}>{item}</FilterItem>
-                      </ContainerCheckbox>
-                    );
-                  })}
-                </div>
-              </Form>
-            )}
-          </Formik>
-        </div>
-      )}
-    </div>
+              <SliderConteiner>
+                <ByFilterName>стоимость</ByFilterName>
+                <PriceSlider />
+              </SliderConteiner>
+              <ByFilterName id="checkbox-group">по цветку</ByFilterName>
+              <div role="group" aria-labelledby="checkbox-group">
+                {byFlower.map((item, index) => {
+                  return (
+                    <ContainerCheckbox key={index}>
+                      <FilterInput
+                        id={item}
+                        type="checkbox"
+                        name="checked"
+                        value={item}
+                        onChange={(e) => {
+                          handleChange(e, setFieldValue, values);
+                        }}
+                      />
+                      <FilterItem htmlFor={item}>{item}</FilterItem>
+                    </ContainerCheckbox>
+                  );
+                })}
+              </div>
+            </Form>
+          )}
+        </Formik>
+      </List>
+    </ListContainer>
   );
 };
 

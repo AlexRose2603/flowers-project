@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Slider from "rc-slider";
-import "rc-slider/assets/index.css";
+
+import { StyledSlider } from "./PriceSlider.styled";
 
 const PriceSlider = () => {
   const [statePrice, setStatePrice] = useState({
@@ -13,7 +13,7 @@ const PriceSlider = () => {
   };
   return (
     <div>
-      <Slider
+      <StyledSlider
         min={50}
         max={1000}
         range
