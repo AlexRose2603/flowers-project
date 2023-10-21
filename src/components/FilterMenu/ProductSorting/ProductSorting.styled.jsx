@@ -91,7 +91,7 @@ export const FilterButton = styled.button`
   letter-spacing: 1.6px;
   text-decoration-line: underline;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   &::after {
     content: "▼";
 
@@ -101,13 +101,6 @@ export const FilterButton = styled.button`
 
     margin-left: 10px;
   }
-`;
-
-export const TestBox = styled.div`
-  /* overflow: hidden; */
-  /* height: 300px; */
-  /* max-height: 1001%; */
-  /* position: relative; */
 `;
 
 export const List = styled.div`
@@ -122,7 +115,7 @@ export const List = styled.div`
     max-height 1.5s ease;
 
   &.active {
-    max-height: 1001%;
+    max-height: 100%;
 
     visibility: visible;
     height: auto;
@@ -131,10 +124,10 @@ export const List = styled.div`
 `;
 
 export const StyledForm = styled(Form)`
-  padding: 20px 0 30px 10px;
+  /* padding: 10px 0 30px 10px; */
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.3);
-  border: 1px solid #40ff00;
+  /* border: 1px solid #40ff00; */
   backdrop-filter: blur(10px);
 
   /* position: fixed; */
