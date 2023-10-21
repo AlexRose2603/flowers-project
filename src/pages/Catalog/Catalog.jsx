@@ -1,3 +1,4 @@
+import CategoriesSorting from "../../components/FilterMenu/CategoriesSorting/CategoriesSorting";
 import ProductFilter from "../../components/FilterMenu/ProductFilter/ProductFilter";
 import ProductSorting from "../../components/FilterMenu/ProductSorting/ProductSorting";
 import Footer from "../../components/Footer/Footer";
@@ -24,6 +25,7 @@ const Catalog = () => {
       <div>
         <ProductFilter />
         <ProductSorting />
+        <CategoriesSorting />
       </div>
       <Footer />
     </Container>
