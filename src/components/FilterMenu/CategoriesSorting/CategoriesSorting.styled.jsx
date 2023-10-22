@@ -79,23 +79,12 @@ export const FilterButton = styled.button`
 `;
 
 export const List = styled.div`
-  position: absolute;
   z-index: 999;
-  /* width: 300px; */
-  max-height: 0;
 
   overflow: hidden;
 
   transition: top 1.5s ease, opacity 1.5s ease, transform 1.5s ease,
     max-height 1.5s ease;
-
-  &.active {
-    max-height: 100%;
-
-    visibility: visible;
-
-    /* top: 11px; */
-  }
 `;
 
 export const StyledForm = styled(Form)`

@@ -8,7 +8,6 @@ import {
   ContainerCheckbox,
   ListContainer,
   List,
-  FilterButton,
   StyledForm,
 } from "../CategoriesSorting/CategoriesSorting.styled";
 
@@ -68,12 +67,10 @@ const CategoriesSorting = () => {
   console.log(inputValue);
   return (
     <ListContainer>
-      <FilterButton onClick={togleMenu}>Категории</FilterButton>
-
-      <List className={`${!isOpen ? "active" : ""}`}>
+      <List>
         <Formik initialValues={initialValues} onSubmit={handleSubmit}>
           {({ values, setFieldValue }) => (
-            <StyledForm className={`${!isOpen ? "active" : ""}`}>
+            <StyledForm>
               <div role="group" aria-labelledby="checkbox-group">
                 {byLights.map((item, index) => {
                   return (

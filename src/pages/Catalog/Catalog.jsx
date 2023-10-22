@@ -1,4 +1,5 @@
 import CategoriesSorting from "../../components/FilterMenu/CategoriesSorting/CategoriesSorting";
+import FilterAccordion from "../../components/FilterMenu/FilterAccordion/FilterAccordion";
 import ProductFilter from "../../components/FilterMenu/ProductFilter/ProductFilter";
 import ProductSorting from "../../components/FilterMenu/ProductSorting/ProductSorting";
 import Footer from "../../components/Footer/Footer";
@@ -23,9 +24,17 @@ const Catalog = () => {
         В нашем магазине самый большой выбор букетов для любых событий:
       </AsideText>
       <div>
-        <ProductFilter />
-        <ProductSorting />
-        <CategoriesSorting />
+        <FilterAccordion title="фильтр товаров">
+          <ProductFilter />
+        </FilterAccordion>
+
+        <FilterAccordion title="сортировка товаров">
+          <ProductSorting />
+        </FilterAccordion>
+
+        <FilterAccordion title="Категории">
+          <CategoriesSorting />
+        </FilterAccordion>
       </div>
       <Footer />
     </Container>

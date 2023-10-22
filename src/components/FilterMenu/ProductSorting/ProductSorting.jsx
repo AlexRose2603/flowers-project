@@ -8,7 +8,6 @@ import {
   ContainerCheckbox,
   ListContainer,
   List,
-  FilterButton,
   StyledForm,
 } from "../ProductSorting/ProductSorting.styled";
 
@@ -19,12 +18,7 @@ const initialValues = {
 };
 
 const ProductSorting = () => {
-  const [isOpen, setIsOpen] = useState(true);
   const [inputValue, setInputValue] = useState("");
-
-  const togleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   const handleSubmit = (values) => {
     console.log(values.picked);
@@ -38,12 +32,10 @@ const ProductSorting = () => {
   console.log(inputValue);
   return (
     <ListContainer>
-      <FilterButton onClick={togleMenu}>сортировка товаров</FilterButton>
-
-      <List className={`${!isOpen ? "active" : ""}`}>
+      <List>
         <Formik initialValues={initialValues} onSubmit={handleSubmit}>
           {({ values, setFieldValue }) => (
-            <StyledForm className={`${!isOpen ? "active" : ""}`}>
+            <StyledForm>
               <div role="group" aria-labelledby="checkbox-group">
                 {bySort.map((item, index) => {
                   return (
