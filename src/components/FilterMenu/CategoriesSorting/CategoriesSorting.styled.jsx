@@ -12,14 +12,11 @@ export const FilterInput = styled(Field)`
 `;
 
 export const FilterItem = styled.label`
-  font-family: Oswald;
   font-size: 12px;
   position: relative;
   letter-spacing: 0.48px;
   text-transform: uppercase;
-
-  margin-bottom: 5px;
-
+  padding: 11px;
   cursor: pointer;
 
   &:hover {
@@ -29,7 +26,6 @@ export const FilterItem = styled.label`
 
 export const ContainerCheckbox = styled.div`
   display: inline-flex;
-
   cursor: pointer;
 
   input:checked {
@@ -42,29 +38,29 @@ export const ContainerCheckbox = styled.div`
   }
 
   label {
-    padding: 11px 16px;
-
     border-radius: 40px;
     border: 0.5px solid #fff;
   }
 `;
 
 export const ListContainer = styled.div`
-  /* background: #43ffd33a; */
   height: 100%;
-  /* position: relative; */
+  margin-bottom: 55px;
 `;
 
 export const List = styled.div`
   z-index: 999;
-
   overflow: hidden;
 `;
 
 export const StyledForm = styled(Form)`
   border-radius: 20px;
-  background: rgba(0, 0, 0, 0.3);
-  /* display: inline-block; */
+  /* background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px); */
+`;
 
-  backdrop-filter: blur(10px);
+export const CategoriesWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 `;

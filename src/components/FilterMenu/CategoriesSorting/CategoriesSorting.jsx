@@ -9,6 +9,7 @@ import {
   ListContainer,
   List,
   StyledForm,
+  CategoriesWrapper,
 } from "../CategoriesSorting/CategoriesSorting.styled";
 
 const byLights = [
@@ -59,7 +60,7 @@ const CategoriesSorting = () => {
         <Formik initialValues={initialValues} onSubmit={handleSubmit}>
           {({ values, setFieldValue }) => (
             <StyledForm>
-              <div role="group" aria-labelledby="checkbox-group">
+              <CategoriesWrapper role="group" aria-labelledby="checkbox-group">
                 {byLights.map((item, index) => {
                   return (
                     <ContainerCheckbox key={index}>
@@ -76,7 +77,7 @@ const CategoriesSorting = () => {
                     </ContainerCheckbox>
                   );
                 })}
-              </div>
+              </CategoriesWrapper>
             </StyledForm>
           )}
         </Formik>

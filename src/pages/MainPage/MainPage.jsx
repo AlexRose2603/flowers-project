@@ -91,7 +91,7 @@ const MainPage = () => {
         <HeroParagr>
           Создаём для тех, кто ценит свежесть и изящество цветка
         </HeroParagr>
-        <CatalogBtn>смотреть каталог</CatalogBtn>
+        <CatalogBtn to="/catalog">смотреть каталог</CatalogBtn>
         <PartSection>
           <SectionTitle>каталог</SectionTitle>
           <CardsContainer>

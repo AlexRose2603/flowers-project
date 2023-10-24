@@ -1,29 +1,14 @@
 import styled from "styled-components";
 
 export const AccordionTitle = styled.div`
-  color: #43ffd2;
-  outline: none;
-  border: 0;
-  background: transparent;
-  font-family: Oswald;
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-size: 16px;
-
   letter-spacing: 1.6px;
   text-decoration-line: underline;
-  text-transform: uppercase;
   margin-bottom: 10px;
-
-  &::after {
-    content: "▼";
-
-    color: #43ffd2;
-    list-style-type: none;
-    text-decoration-line: none;
-
-    margin-left: 10px;
-  }
-
-  cursor: pointer;
+  color: ${({ isOpen }) => (isOpen ? "#43ffd2" : "#d978ac")};
 `;
 
 export const AccordionItem = styled.div`

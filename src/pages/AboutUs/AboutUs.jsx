@@ -21,7 +21,7 @@ const AboutUs = () => {
   return (
     <>
       <Container>
-        <LinkToMain to="/">главная/</LinkToMain>
+        <LinkToMain to="/">главная/ о нас</LinkToMain>
         <Title>о нас</Title>
         <SubTitle>Lover flower</SubTitle>
         <InfoBox>
