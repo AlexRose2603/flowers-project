@@ -78,30 +78,6 @@ export const ListContainer = styled.div`
   height: 100%;
 `;
 
-export const FilterButton = styled.button`
-  color: #43ffd2;
-  outline: none;
-  border: 0;
-  background: transparent;
-  font-family: Oswald;
-  font-size: 16px;
-
-  letter-spacing: 1.6px;
-  text-decoration-line: underline;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-
-  &::after {
-    content: "▼";
-
-    color: #43ffd2;
-    list-style-type: none;
-    text-decoration-line: none;
-
-    margin-left: 10px;
-  }
-`;
-
 export const List = styled.div`
   z-index: 999;
   width: 300px;
@@ -109,10 +85,9 @@ export const List = styled.div`
 `;
 
 export const StyledForm = styled(Form)`
-  padding: 20px 0 30px 10px;
+  padding: 20px 0 10px 10px;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.3);
-  background: rgba(222, 13, 13, 0.3);
 
   backdrop-filter: blur(10px);
 `;

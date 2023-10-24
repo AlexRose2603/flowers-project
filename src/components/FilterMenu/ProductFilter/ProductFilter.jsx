@@ -15,7 +15,8 @@ import {
   StyledForm,
 } from "./ProductFilter.styled";
 
-const byLights = ["нежные", "яркие", "test"];
+const byLights = ["нежные", "яркие"];
+
 const byColor = [
   "белый",
   "желтый",

@@ -55,41 +55,13 @@ export const ListContainer = styled.div`
   /* position: relative; */
 `;
 
-export const FilterButton = styled.button`
-  color: #43ffd2;
-  outline: none;
-  border: 0;
-  background: transparent;
-  font-family: Oswald;
-  font-size: 16px;
-
-  letter-spacing: 1.6px;
-  text-decoration-line: underline;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  &::after {
-    content: "▼";
-
-    color: #43ffd2;
-    list-style-type: none;
-    text-decoration-line: none;
-
-    margin-left: 10px;
-  }
-`;
-
 export const List = styled.div`
   z-index: 999;
 
   overflow: hidden;
-
-  transition: top 1.5s ease, opacity 1.5s ease, transform 1.5s ease,
-    max-height 1.5s ease;
 `;
 
 export const StyledForm = styled(Form)`
-  /* justify-content: center; */
-
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.3);
   /* display: inline-block; */

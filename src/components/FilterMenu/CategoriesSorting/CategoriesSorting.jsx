@@ -16,17 +16,12 @@ const byLights = [
   "Букеты из ромашек",
   "Букеты из хризантем",
   "Сборные букеты",
-  "Комнатные цветы в горшках",
   "Популярное",
   "Букет на праздник",
   "Композиции из цветов",
-  "Конверты",
   "Открытки",
-  "Подарки",
   "Букеты из сухоцветов",
   "Букеты роз",
-  "Цветы на похороны",
-  "Упаковка подарков",
   "Монобукеты",
   "Шары",
 ];
@@ -36,14 +31,7 @@ const initialValues = {
 };
 
 const CategoriesSorting = () => {
-  const [isOpen, setIsOpen] = useState(true);
   const [inputValue, setInputValue] = useState([]);
-
-  const togleMenu = () => {
-    return setTimeout(() => {
-      setIsOpen(!isOpen);
-    }, 0);
-  };
 
   const handleSubmit = (values) => {
     console.log(values);
@@ -64,7 +52,7 @@ const CategoriesSorting = () => {
       setInputValue(inputValue.filter((item) => item !== value));
     }
   };
-  console.log(inputValue);
+
   return (
     <ListContainer>
       <List>

@@ -60,9 +60,7 @@ export const ContainerCheckbox = styled.div`
     margin-right: 6px;
   }
 `;
-export const ListContainer = styled.div`
-  /* height: 100%; */
-`;
+export const ListContainer = styled.div``;
 
 export const FilterButton = styled.button`
   color: #43ffd2;
@@ -92,9 +90,8 @@ export const List = styled.div`
 `;
 
 export const StyledForm = styled(Form)`
-  /* padding: 10px 0 30px 10px; */
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.3);
-  /* border: 1px solid #40ff00; */
+
   backdrop-filter: blur(10px);
 `;

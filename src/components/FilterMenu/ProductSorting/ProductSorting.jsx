@@ -29,7 +29,7 @@ const ProductSorting = () => {
 
     setInputValue(value);
   };
-  console.log(inputValue);
+
   return (
     <ListContainer>
       <List>
