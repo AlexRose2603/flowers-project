@@ -22,7 +22,8 @@ const Header = () => {
   };
   return (
     <>
-      <Wrapper test1={isTest}>
+      {/* test1={isTest} */}
+      <Wrapper>
         {isOpen ? (
           <Burger isOpen={isOpen} toggleMenu={toggleMenu} />
         ) : (
