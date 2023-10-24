@@ -53,7 +53,7 @@ const DeliveryPayment = () => {
     <>
       <Container>
         <Ellipse src={ellipse1} alt="" />
-        <LinkToMain to="/">главная/</LinkToMain>
+        <LinkToMain to="/">главная/ доставка и оплата</LinkToMain>
         <Pion src={pion1} alt="" />
         <Title>
           доставка

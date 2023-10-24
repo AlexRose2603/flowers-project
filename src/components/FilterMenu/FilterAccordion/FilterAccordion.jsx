@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 
 import { AccordionItem, AccordionTitle } from "./FilterAccordion.styled";
+import { Icon } from "../../../utiles/Icon/Icon";
 
 const FilterAccordion = ({ title, children, isActive, onAccordionClick }) => {
   return (
@@ -10,6 +11,12 @@ const FilterAccordion = ({ title, children, isActive, onAccordionClick }) => {
         onClick={onAccordionClick}
       >
         {title}
+        <Icon
+          iconName={"icon-triangle-down"}
+          width={"10px"}
+          stroke={""}
+          fill={""}
+        />
       </AccordionTitle>
       <AccordionItem
         className={`AccordionItem ${!isActive ? "collapsed" : ""}`}
