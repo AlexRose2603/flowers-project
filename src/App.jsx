@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy } from "react";
 import Layout from "./components/SharedLayout/Layout/Layout";
-
+import "./App.css";
 const MainPage = lazy(() => import("./pages/MainPage/MainPage"));
 const Catalog = lazy(() => import("./pages/Catalog/Catalog"));
 const DeliveryPayment = lazy(() =>
@@ -14,8 +14,7 @@ const Contacts = lazy(() => import("./pages/Contacts/Contacts"));
 const CorporativeClients = lazy(() =>
   import("./pages/CorporativeClients/CorporativeClients")
 );
-
-import "./App.css";
+import OrderPage from "./pages/OrderPage/OrderPage";
 
 function App() {
   return (
@@ -28,6 +27,7 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/faq" element={<FackUPage />} />
+          <Route path="/order" element={<OrderPage />} />
           <Route path="/corporative-clients" element={<CorporativeClients />} />
           <Route path="*" element={<ErrorPage />} />
         </Route>

@@ -14,8 +14,9 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 16px 10px;
-
   background-color: ${checkingTest};
+  position: relative;
+  z-index: 10;
 `;
 
 export const Burger = styled(Icon)``;
