@@ -4,6 +4,8 @@ import styled from "styled-components";
 export const LinkToMain = styled(Link)`
   margin-bottom: 20px;
   color: white;
+  position: relative;
+  z-index: 10;
 `;
 
 export const PageTitle = styled.h2`
